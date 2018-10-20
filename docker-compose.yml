@@ -11,6 +11,8 @@ services:
       - mongo
   mongo:
     container_name: activity-tracker-mongo
+    volumes:
+       - ./data/db:/data/db
     image: mongo
     ports: 
       - '27017:27017'

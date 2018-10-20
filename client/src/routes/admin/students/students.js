@@ -10,17 +10,20 @@ class StudentsRoute extends Component {
             name: {
                 first: 'Jack',
                 second: 'Allen'
-            }
+            },
+            school: 'Stratford-upon-Avon College'
         }, {
             name: {
                 first: 'John',
                 second: 'Smith'
-            }
+            },
+            school: 'Birmingham High School'
         }, {
             name: {
                 first: 'Thomas',
                 second: 'Tank'
-            }
+            },
+            school: 'The Shaw Academy'
         }]
     };
 
@@ -28,7 +31,8 @@ class StudentsRoute extends Component {
         return (
             <div className='student'
                  key={index}>
-                {student.name.first} {student.name.second}
+                <div className='student-name'>{student.name.first} {student.name.second}</div>
+                <div className='student-school'>{student.school}</div>
             </div>
         )
     };

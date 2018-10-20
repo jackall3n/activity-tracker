@@ -32,7 +32,7 @@ class Navigation extends Component {
                      exact
                      key={index}
                      to={link.to}>
-                {link.title}
+                {link.title.toUpperCase()}
             </NavLink>
         )
     };

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import RegisterRoute from '../routes/register';
 
+import './app.scss';
+
 class App extends Component {
   state = {
     users: []

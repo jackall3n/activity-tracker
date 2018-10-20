@@ -1,0 +1,21 @@
+@import "foundation";
+
+html, body, #react-root {
+  height: 100%;
+}
+
+#react-root {
+  @include flex();
+}
+
+#sidebar {
+  width: 254px;
+
+  @include breakpoint(small only) {
+    width: 154px;
+  }
+}
+
+#main-content {
+  padding-left: 75px;
+}

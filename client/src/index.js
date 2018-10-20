@@ -10,6 +10,8 @@ import {ConnectedRouter, routerMiddleware} from 'react-router-redux';
 import reduxImmutableState from 'redux-immutable-state-invariant';
 import thunk from 'redux-thunk';
 
+import './styles/main.scss';
+
 import App from "./components/app";
 import reducers from "./store/reducers";
 
@@ -20,8 +22,6 @@ const store = createStore(
     reducers,
     applyMiddleware(thunk, middleware, reduxImmutableState())
 );
-
-console.log(ConnectedRouter);
 
 ReactDOM.render(
     <Provider store={store}>

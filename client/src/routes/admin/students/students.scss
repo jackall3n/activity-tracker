@@ -1,0 +1,30 @@
+.students {
+  max-width: 300px;
+
+  &-results {
+    padding: 20px 10px 15px;
+    font-size: 13px;
+    color: #a0a0a0;
+  }
+
+  .student {
+    background: white;
+    box-shadow: 2px 2px 0px #4a4a4a0f;
+    border-radius: 5px;
+    padding: 15px 20px;
+    color: #545454;
+    margin-top: 25px;
+    transition: .1s linear transform;
+    cursor: pointer;
+    border: 1px solid #e4e2e2;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    &:hover {
+      transform: scale(1.1, 1.1);
+
+    }
+  }
+}

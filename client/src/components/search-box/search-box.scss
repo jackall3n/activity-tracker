@@ -1,0 +1,28 @@
+@import '../../styles/foundation';
+
+.search-box {
+  @include display(flex);
+  @include flex-align(left, center);
+
+  &-icon {
+    width: 30px;
+    height: 30px;
+    background-size: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAQAAABIkb+zAAADfElEQVR4AeyaQ6AkQQyGs+Z752db3ZWsbdu4rnVd+7K2dV/vaW3btm37+ZQad1fNor9cZ1L1pzNTqaTBwcHBwcHBwcEhULKicQjNo7V0AG/gV/xIt3A/raV5OMSIhD8bQ9AkPEu5HuwMTSKEPxGzNp6gXN8MT5i14U8iO4E2Ua6ftknEwh9BKZpE3ynXf8OvNAlKQXChcDxCuYEbHqFwCB5Yg15SrkV7iTWCFf1e9INybbAf1Av0I2p6yPwXNA8b5WSJiLjyceUp3MgUjWkevXL7+e+iJujFjMPXbrJ6q9keSoMLqIzZHre6+dbrnHjQB5Vxc1xt857PZm3a5lLCWSqjT8AMFxv4Rl19Tr8e+M2FiJmgB6Ma/pZTwKzqVwiqyymIv41qoIESeFmK3VszGfwEk+itJOEylADViHbSsr9Ek4A8NcFf3JdoB6rBvVL8R0KA0EjJ1x7V+Z8iLXkaLECnJH9pauM/jS9orRAwa0n+poFK6DEvii173MQEPAJ15KTyeJkNwCJmA41JhP3ZUq9sqOdLSBXtIHUClrDHvQpsgJYzAYvVCdjHlrKlDBY9WFj2qRNwlx079WwRUI+F5R6ogtcvRoqSs+UVqIIXcakhYAOpIbw0AVXwO1hmZbCBzMr8ivm3p9A7UAXdYz/i+mADoj4T8ECdgD0sW3vb091gXveqE7CYxWq5LV5XMK8r9JUSL224QZXi7RbsC6qgNPuLOdGY+zQyQR34XHU5TY9BJThdega1LHZXmT+cDwzFSUSnLPk7LQkgUAvukiSMCHj7I6TtHwLVYFvb2iqN5bYKttHQ2KKLcmMLk+xobNFB0AFVl1uL9NK/1qJZy1VrEQn0QDOtNXext6vRCC4AXWSWpTOuZwNYw4fYb6FcF3YzKVTrYNXeAQd9pjTtg23PIybRuGDEFFUhrryIyMniIybJvoiWoBueyfYYjtf5FGpZH7PiGykMI0AfRiQesrT9fUYknzholgClxET8GtD2P9GwovsE5QZXAojYAF722J2dAMVQbnAk8H+lMz4nziHRE/LhAvRLYBDSZDZB5nYBR+dHnoETgi6B/bCH0DxaU/jK2cfiY+oAThVdRAS4AYMvIa/9OSYCAARgGIgmlDEin7ECWCj3UZC/bSL8TkBAmAsBAQHhPoQAOgnZryRkv5ewR1ch1O6H8P6+JEmSdADk4H1Ek9pwEQAAAABJRU5ErkJggg==)
+  }
+
+  &-input-holder {
+    border-bottom: 1px solid #0000000f;
+  }
+
+  input, input:focus {
+    background: none;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    font-size: 14px;
+  }
+}

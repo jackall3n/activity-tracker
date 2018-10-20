@@ -5,7 +5,7 @@ export default class RegisterRoute extends Component {
         return (
             <div className='grid-container'>
                 <div className='grid-x grid-padding-x'>
-                    <form className='cell small-6 small-offset-3'>
+                    <form className='cell large-8 large-offset-2'>
                         <h1>You should register here</h1>
                         <h6>Then it will all be ok</h6>
 
@@ -58,7 +58,7 @@ export default class RegisterRoute extends Component {
                         </div>
 
                         <div className='cell small-12'>
-                            <input id='gdpr' name='gdpr' type="checkbox" /><label htmlFor="gdpr">Yes, I accept conditions that I have not read?*</label>
+                            <input id='gdpr' name='gdpr' type="checkbox" /><label htmlFor="gdpr">Yes, I accept conditions that I have not read*</label>
                         </div>
 
                         <div className='grid-x align-center-middle'>

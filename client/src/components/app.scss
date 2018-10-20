@@ -1,3 +1,8 @@
 @import '~foundation-sites/scss/foundation';
 
 @include foundation-everything();
+
+html, body {
+  font-family: "metropolis", "helvetica neue", "helvetica", "arial", sans-serif;
+  color: #252525;
+}

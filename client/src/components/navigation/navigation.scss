@@ -1,0 +1,16 @@
+nav {
+  a {
+    display: block;
+    padding: 15px 50px;
+    color: #485e84;
+    font-weight: 500;
+    border-left: 4px solid transparent;
+    transition: color .1s linear, border-left .3s linear, background .2s linear;
+
+    &.active {
+      color: white;
+      background: #30a0ff1c;
+      border-left: 4px solid #154ba5;
+    }
+  }
+}

@@ -1,32 +1,19 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import RegisterRoute from '../routes/register';
+
+import AdminRoute from '../routes/admin';
 
 import './app.scss';
 
 class App extends Component {
-  state = {
-    users: []
-  }
-
-  async componentDidMount() {
-    /*const response = await fetch('/users');
-    const users = await response.json();
-
-    this.setState({
-      users
-    })*/
-  }
-
   render() {
     return (
       <Router>
-          <Switch>
-            <Route exact path='/'>
-                <div>Home</div>
-            </Route>
-            <Route path='/register' component={RegisterRoute}/>
-          </Switch>
+        <Switch>
+            <Route exact path='/register' component={RegisterRoute} />
+          <Route path='/' component={AdminRoute} />
+        </Switch>
       </Router>
     );
   }

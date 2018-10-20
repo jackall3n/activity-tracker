@@ -1,0 +1,43 @@
+@import '../../styles/foundation';
+
+.registration {
+
+  width: 100%;
+  background: #f3f3f3;
+  overflow: auto;
+  overscroll-behavior: auto;
+
+  &-card {
+    background: white;
+    border: 2px solid #141450;
+    margin: 50px auto;
+    box-shadow: 1px 4px 0 0 #0000001c;
+
+    @include  breakpoint(large up) {
+      margin: 25px auto;
+    }
+
+    @include  breakpoint(medium up) {
+      margin: 25px auto;
+      width: 600px;
+    }
+
+    @include  breakpoint(small only) {
+      margin: 0;
+    }
+  }
+
+  &-content {
+    padding: 20px 20px;
+  }
+
+  &-footer {
+    button {
+      color: white;
+    }
+
+    background: #141450;
+    padding: 20px 40px;
+    font-size: 15px;
+  }
+}

@@ -16,6 +16,9 @@ class Navigation extends Component {
             }, {
                 to: '/feedback',
                 title: 'Feedback'
+            },{
+                to: '/register',
+                title: 'Registration'
             }
         ]
     };

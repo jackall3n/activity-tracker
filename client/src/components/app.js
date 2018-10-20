@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import RegisterRoute from '../routes/register';
+import RegisterRoute from '../routes/register/register';
 
 import AdminRoute from '../routes/admin';
 

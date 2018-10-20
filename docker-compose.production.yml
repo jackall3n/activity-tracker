@@ -4,10 +4,10 @@ services:
   client: 
     container_name: activity-tracker-client
     restart: always
-    build: .
-    volumes:
-      - './client:/usr/src/app/client'
+    build: 
+      context: .
+      dockerfile: Dockerfile-production
     ports: 
-      - '3000:3000'
+      - '80:80'
     environment:
-      - NODE_ENV=development
+      - NODE_ENV=production

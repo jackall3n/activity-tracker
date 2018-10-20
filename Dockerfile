@@ -1,13 +1,11 @@
 FROM node:10
 
-WORKDIR /usr/src/app
+WORKDIR /usr/src/app/client
 
-COPY package.json ./
-COPY yarn.lock ./
+COPY client/package.json .
+COPY client/yarn.lock .
 
 RUN yarn
-
-COPY . . 
 
 EXPOSE 3000
 

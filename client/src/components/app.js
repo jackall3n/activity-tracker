@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import RegisterRoute from '../routes/register';
 
 class App extends Component {
   state = {
@@ -22,9 +23,7 @@ class App extends Component {
             <Route exact path='/'>
                 <div>Home</div>
             </Route>
-            <Route path='/register'>
-                <div>Register Here</div>
-            </Route>
+            <Route path='/register' component={RegisterRoute}/>
           </Switch>
       </Router>
     );
